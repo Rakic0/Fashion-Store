@@ -1,3 +1,5 @@
+"use strict";
+
 function elScroll(el) {
   document
     .getElementById(`${el}`)
@@ -7,7 +9,9 @@ function elScroll(el) {
 const btnTransparent = document.querySelectorAll(".btn--transparent ");
 const day = document.querySelector(".day");
 const night = document.querySelector(".night");
-const grid2Col = document.querySelector(".grid-2--col");
+const menu = document.querySelector(".menu");
+const hamburger = document.querySelector(".bi");
+const mobileNav = document.querySelector(".mobile-nav");
 
 const blurIn = (el) => {
   el.classList.add("blur-in");
@@ -39,4 +43,11 @@ night.addEventListener("mouseover", function () {
 night.addEventListener("mouseout", function () {
   blurOut(day);
   btnTransparent[1].classList.remove("btn--transparent-hover");
+});
+
+menu.addEventListener("click", function () {
+  hamburger.classList.toggle("bi-list");
+  hamburger.classList.toggle("bi-x-lg");
+  mobileNav.classList.toggle("open");
+  document.querySelector(".logo-box").classList.toggle("d-none");
 });

@@ -18,6 +18,11 @@ html {
   font-size: 62.5%;
   font-family: "Playfair Display", serif;
   cursor: default;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .pointer {
@@ -50,6 +55,21 @@ html {
   cursor: pointer;
 }
 
+.btn--main {
+  font-size: 6rem;
+  box-shadow: inset 0 0 0 3px #f2f0ee;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+  font-family: "Great Vibes", cursive;
+  background-color: #806750;
+}
+
+.btn--main:hover {
+  background-color: #806750;
+  transition: 0.3s;
+  box-shadow: inset 0 0 0 3px #c0b3a8;
+}
+
 .btn--transparent {
   color: #f2f0ee;
   padding: 1.2rem 4rem;
@@ -78,4 +98,16 @@ html {
 
 .grid-4--col {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.d-none {
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-nav,
+.menu {
+  opacity: 0;
+  pointer-events: none;
 }

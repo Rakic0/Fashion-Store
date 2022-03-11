@@ -1,0 +1,140 @@
+@media (max-width: 84.37em) {
+  .hero-title {
+    font-size: 6vw;
+  }
+  .hero-sub {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 48em) {
+  .btn--main {
+    font-size: 7vw;
+  }
+  .hero-section {
+    background-position: right;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url("../img/hero.webp");
+  }
+  .hero-section > .container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .hero-title {
+    font-size: 8vw;
+  }
+  .hero-sub {
+    font-size: 2.5vw;
+  }
+  .col {
+    text-align: center;
+  }
+  .grid-4--col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav {
+    display: none;
+  }
+  .bi-list {
+    font-size: 5rem;
+  }
+  .bi-x-lg {
+    font-size: 5rem;
+  }
+  .header > .container {
+    justify-content: flex-end;
+  }
+  .mobile-nav,
+  .menu {
+    opacity: 100;
+    pointer-events: auto;
+  }
+  .mobile-nav {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.97);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    transition: 0.3s ease-in;
+    transform: translateX(100%);
+  }
+  .logo {
+    margin-bottom: 5vh;
+    font-size: 10vw;
+  }
+  .open {
+    transition: 0.3s ease-in;
+    transform: translateX(0);
+  }
+  .header:hover {
+    background-color: rgba(255, 255, 255, 0.97);
+    -webkit-backdrop-filter: blur(5px);
+    animation: header 0.5s;
+  }
+  @keyframes header {
+    from {
+      background-color: transparent;
+    }
+    to {
+      background-color: rgba(255, 255, 255, 0.97);
+    }
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-item:last-child {
+    display: none;
+  }
+  .nav-link {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 26.56em) {
+  .btn--main {
+    font-size: 10vw;
+  }
+  .hero-title {
+    font-size: 10vw;
+    margin-bottom: 7rem;
+  }
+  .hero-sub {
+    display: none;
+  }
+  .flex {
+    display: block;
+  }
+  .day,
+  .night {
+    min-width: 100%;
+  }
+  .day:hover,
+  .night:hover {
+    max-width: 100%;
+  }
+  .grid-4--col {
+    grid-template-columns: 1fr;
+  }
+  .grid-3--col {
+    grid-template-columns: 1fr;
+  }
+  .nav-link {
+    font-size: 10vw;
+  }
+  .logo {
+    font-size: 15vw;
+  }
+}

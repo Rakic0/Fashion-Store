@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/querie.css" />
     <title>Fashion Store</title>
   </head>
   <body id="top">
@@ -15,6 +16,7 @@
         <div class="logo-box">
           <a onclick="elScroll('top')" class="logo">Fashion</a>
         </div>
+        <div class="menu"><i class="bi bi-list"></i></div>
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -38,6 +40,27 @@
           </ul>
         </nav>
       </div>
+      <nav class="mobile-nav">
+        <a onclick="elScroll('top')" class="logo">Fashion</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a onclick="elScroll('new-collection')" class="link nav-link"
+              >New Colection</a
+            >
+          </li>
+          <li class="nav-item">
+            <a onclick="elScroll('popular')" class="link nav-link">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="elScroll('about-us')" class="link nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="openInSameWindow('')" class="link"
+              ><i class="bi bi-handbag"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
